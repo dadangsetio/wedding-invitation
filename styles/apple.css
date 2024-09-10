@@ -1,0 +1,60 @@
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heart-container {
+    background-color: #f0f0f0;
+    z-index: 1000;
+}
+
+#heart {
+    width: 50px;
+    height: 50px;
+    background-color: #ff69b4;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#heart::before,
+#heart::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+}
+
+#heart::before {
+    top: -25px;
+    left: 0;
+}
+
+#heart::after {
+    top: 0;
+    left: -25px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#new-view {
+    background-color: #ffffff;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#new-view.visible {
+    opacity: 1;
+}
