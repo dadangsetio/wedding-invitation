@@ -1,4 +1,3 @@
-
 .fullscreen {
     position: fixed;
     top: 0;
@@ -57,4 +56,18 @@
 
 #new-view.visible {
     opacity: 1;
+}
+
+#heart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#click-me {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
 }
